@@ -1,3 +1,4 @@
+{% load static %}
 <header class="header">
     <div class="details">
       <div class="header-info">
@@ -32,5 +33,5 @@
         <div class="my-cv"><a href="docs/David Michael - Backend Role.pdf" class="btn" download="">Download My Resume</a></div>
       </div>
     </div>
-    <img src="images/david.jpg" class="header-img" alt="" />
+    <img src="{% static 'images/david.jpg' %}" class="header-img" alt="" />
   </header>
