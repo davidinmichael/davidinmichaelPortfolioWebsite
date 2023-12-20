@@ -10,7 +10,10 @@
   </head>
   <body>
     <div class="wrapper">
-        {% extends "nav.html" %}
+      {% block nav %} {% include "nav.html" %} {% endblock %}
+      {% block header %} {% include "header.html" %} {% endblock %}
+      {% block content %}{% endblock%}
+      {% block footer %} {% include "footer.html" %} {% endblock %}
     </div>
   </body>
 </html>
