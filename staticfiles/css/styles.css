@@ -1,0 +1,284 @@
+:root {
+    --dark: #000;
+    --white: white;
+    --accent: #9A0680;
+    --bg: #eeeeeeb7;
+    --card-bg: #eeeeee49;
+}
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    padding: 0 auto;
+}
+
+.btn {
+    background-color: var(--accent);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    transition: all 0.5s linear;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--bg);
+    color: var(--accent);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-size: 1.8rem;
+    transition: all 0.5s linear;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+    border-bottom: var(--accent) 1px solid;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-items {
+        gap: 1rem;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    min-height: 15rem;
+    margin-top: 3rem;
+    /* gap: 2rem; */
+    /* padding: 2rem; */
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5rem;
+    gap: 8rem;
+}
+
+.header-info {
+    display: grid;
+    gap: 5rem;
+}
+
+.header-text > p {
+    font-size: 1.5rem;
+}
+
+.header-text > h1 {
+    font-size: 3rem;
+}
+.header-text > a {
+    margin-top: 1rem;
+}
+
+.contacts {
+    display: flex;
+    /* align-items: flex-end; */
+    gap: 2rem;
+}
+
+.contact h3 {
+    font-size: 1.5rem;
+}
+
+.contact p {
+    color: var(--bg);
+}
+
+.header-img {
+    width: 30%;
+    border-radius: 1rem 2rem;
+    /* background-color: var(--bg); */
+    /* height: 100%; */
+}
+
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-img {
+        min-width: 80%;
+        background-color: var(--bg);
+        height: 30rem;
+        margin-top: 5rem;
+    }
+
+    .details {
+        text-align: center;
+        gap: 2rem;
+        margin-top: 0;
+    }
+
+    .contacts {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.about {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.about-img {
+    width: 20rem;
+    /* background-color: var(--bg); */
+}
+
+.about-content {
+    width: 50%;
+    display: grid;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+.about-content h2 {
+    font-size: 3rem;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.about-content > .btn {
+    display: inline-block;
+    width: 10rem;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-content {
+        width: 80%;
+    }
+
+    .about-img {
+        width: 50%;
+        height: 20rem;
+        background-color: var(--bg);
+        display: none;
+    }
+}
+
+.services {
+    display: grid;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.services > h3 {
+    font-size: 3rem;
+}
+
+.service-cards {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.service {
+    background-color: var(--card-bg);
+    max-width: 30rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.service h3, .service p {
+    font-size: 1.5rem;
+
+}
+
+.icon {
+    color: var(--accent);
+    background-color: var(--white);
+    width: 3rem;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .service-cards {
+        flex-direction: column;
+    }
+    
+}
+
+.footer {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    margin: 5rem 0;
+    background-color: var(--card-bg);
+    padding: 2rem;
+}
+
+.footer-name {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.footer > p {
+    font-size: 1.5rem;
+    text-align: center;
+}
