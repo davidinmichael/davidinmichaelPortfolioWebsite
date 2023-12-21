@@ -290,9 +290,20 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
-    width: 80%;
+    max-width: 50%;
     margin: 5rem auto 0;
 }
+
+@media screen and (max-width: 600px) {
+    .about-container {
+        max-width: 80%;
+    }
+    
+}
+
+/* .about-me {
+    max-width: 50%;
+} */
 
 .about-me h1 {
     font-size: 3rem;
