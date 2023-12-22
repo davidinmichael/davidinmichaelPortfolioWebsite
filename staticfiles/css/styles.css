@@ -282,3 +282,48 @@ a {
     font-size: 1.5rem;
     text-align: center;
 }
+
+
+/* About Me */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 50%;
+    margin: 5rem auto 0;
+}
+
+@media screen and (max-width: 600px) {
+    .about-container {
+        max-width: 80%;
+    }
+    
+}
+
+/* .about-me {
+    max-width: 50%;
+} */
+
+.about-me h1 {
+    font-size: 3rem;
+    color: var(--accent);
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    background-color: var(--accent);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.conclusion {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
